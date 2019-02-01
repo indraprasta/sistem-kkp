@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sistem.informasi.LoginController">
+   <children>
+      <Pane layoutX="14.0" layoutY="14.0" prefHeight="290.0" prefWidth="388.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <effect>
+            <DropShadow blurType="GAUSSIAN" color="#bfa8a8" />
+         </effect>
+         <children>
+            <JFXTextField fx:id="username" focusColor="#0ae7ca" labelFloat="true" layoutX="79.0" layoutY="79.0" opacity="0.5" prefHeight="29.0" prefWidth="213.0" promptText="Username" unFocusColor="#9a9090">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField fx:id="pass" focusColor="#0ae7ca" labelFloat="true" layoutX="79.0" layoutY="127.0" opacity="0.5" prefHeight="29.0" prefWidth="213.0" promptText="Password" unFocusColor="#9a9090">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXButton fx:id="login" buttonType="RAISED" layoutX="79.0" layoutY="196.0" onAction="#tombolLogin" prefHeight="39.0" prefWidth="84.0" ripplerFill="WHITE" style="-fx-background-color: #13bed8;" text="Login" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="cancel" buttonType="RAISED" layoutX="208.0" layoutY="196.0" onAction="#tombolCancel" prefHeight="39.0" prefWidth="84.0" ripplerFill="WHITE" style="-fx-background-color: #13bed8;" text="Cancel" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
